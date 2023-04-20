@@ -1,0 +1,67 @@
+/* Write your CSS here */
+.app-container {
+  min-height: 100vh;
+  padding: 16px;
+  background-color: #161625;
+}
+.responsive-container {
+  width: 90%;
+  max-width: 450px;
+  margin-left: 18px;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .responsive-container {
+    width: 85%;
+    margin-left: 84px;
+    max-width: 1140px;
+  }
+}
+.website-logo-container {
+  display: flex;
+  align-items: center;
+}
+.website-logo {
+  height: 56px;
+  width: 56px;
+}
+.website-name {
+  color: #2cc6c6;
+  font-size: 28px;
+  font-weight: 800;
+  font-family: 'Roboto';
+  margin-left: 12px;
+}
+.website-heading {
+  color: #cbd5e1;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+}
+@media screen and (min-width: 768px) {
+  .website-heading {
+    font-size: 36px;
+  }
+  .website-name {
+    font-size: 20px;
+  }
+}
+.render-view-container {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+}
+.failure-view-img {
+  width: 80%;
+}
+.failure-msg {
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+}
