@@ -22,8 +22,8 @@ const VaccinationCoverage = props => {
   return (
     <div className="graph-container">
       <h1 className="vaccination-heading">Vaccination Coverage</h1>
-      <ResponsiveContainer width="100%" height={500}>
-        <BarChart width={1000} height={300} data={vaccineCoverageData}>
+      
+        <BarChart width={9000} height={400} data={vaccineCoverageData}>
           <XAxis
             dataKey="vaccine_date"
             tick={{stroke: '#6c757d', strokeWidth: 1}}
@@ -36,10 +36,10 @@ const VaccinationCoverage = props => {
             }}
           />
           <Legend wrapperStyle={{padding: 30}} />
-          <Bar dataKey="dose_1" name="Dose 1" fill="#5a8dee" barSize="20%" />
-          <Bar dataKey="dose_2" name="Dose 2" fill="#F54394" barSize="20%" />
+          <Bar dataKey="dose_1" name="Dose 1" radius={[10, 10, 0, 0]} fill="#5a8dee" barSize="20%" />
+          <Bar dataKey="dose_2" name="Dose 2" radius={[5, 5, 0, 0]} fill="#F54394" barSize="20%" />
         </BarChart>
-      </ResponsiveContainer>
+      
     </div>
   )
 }
